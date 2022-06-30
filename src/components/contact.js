@@ -6,6 +6,7 @@ import { faTwitter } from "@fortawesome/free-brands-svg-icons"
 import { faCodeBranch } from "@fortawesome/free-solid-svg-icons"
 import { faCodepen } from "@fortawesome/free-brands-svg-icons"
 import { faGithub } from "@fortawesome/free-brands-svg-icons"
+import { faPen } from "@fortawesome/free-solid-svg-icons"
 
 export default function Contact(props) {
 
@@ -25,6 +26,8 @@ export default function Contact(props) {
                     <a href="https://app.netlify.com/teams/stephenultor/overview" title="link to my Netlify" target="_blank" className="netlify-icon-link"><FontAwesomeIcon icon={faCodeBranch} className="c-icons" /></a>
 
                     <a href="https://codepen.io/stephenleemorrow" title="link to my codepen" target="_blank" className="codepen-icon-link"><FontAwesomeIcon icon={faCodepen} className="c-icons" /></a>
+                    
+                    <FontAwesomeIcon icon={faPen} className="c-icons" title="link to Guest Book" onClick={props.guestBook} />
 
                 </div>
 

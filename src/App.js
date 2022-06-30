@@ -22,7 +22,9 @@ function App() {
 
   //handle Guest book
   function handleGuestBookClick() {
+    setLoader(true)
     setGuestBook(!guestBook)
+    setTimeout(() => { setLoader(false) }, 5700)
   }
 
   //Track Window size  

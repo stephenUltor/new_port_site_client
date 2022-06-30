@@ -16,7 +16,7 @@ function GuestBook(props) {
   }, [])
   
   function getPosts() {
-    Axios.get(`http://localhost:3001/posts`).then((response) => {
+    Axios.get(`https://whispering-fortress-85582.herokuapp.com/posts`).then((response) => {
       setListOfPosts(response.data)
       console.log(response.data)
     })

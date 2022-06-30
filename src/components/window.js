@@ -25,9 +25,7 @@ export default function Window(props) {
 
             
 
-            <Navbar 
-                guestBook={props.guestBook}
-            />
+            <Navbar />
 
             <div className="title-container" id="title-container" data-aos="fade-down" data-aos-delay="100">
 
@@ -52,6 +50,7 @@ export default function Window(props) {
 
             <Builds
                 windowWidth={props.windowWidth}
+                guestBook={props.guestBook}
             />
 
             <div className="footer">
@@ -62,7 +61,9 @@ export default function Window(props) {
 
             </div>
 
-            <Contact />
+            <Contact 
+                guestBook={props.guestBook}
+            />
 
         </>
     )

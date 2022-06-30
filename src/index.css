@@ -125,7 +125,7 @@ img {
 .contact-container {
   position: fixed;
   width: 8%;
-  height: 70%;
+  height: 80%;
   min-height: 550px;
   left: 0;
   bottom: 0;
@@ -529,6 +529,25 @@ img {
 
 @media (max-width: 1000px) {
   .project-image-PW {
+    width: 100%;
+  }
+}
+
+/* guestbook -left */
+.project-image-GB {
+  position: absolute;
+  right: 0;
+  width: 60%;
+  height: 100%;
+  background-color: #D0D6F9;
+  background-image: url("local assets/guestbook.png");
+  background-repeat: none;
+  background-size: cover;
+  border-radius: 5px;
+}
+
+@media (max-width: 1000px) {
+  .project-image-GB {
     width: 100%;
   }
 }

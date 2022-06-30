@@ -19,7 +19,7 @@ export default function CreatePost(props) {
     })
 
     const onSubmit = (data) => {
-        Axios.post("http://localhost:3001/posts", data).then((response) => {
+        Axios.post("https://whispering-fortress-85582.herokuapp.com/posts", data).then((response) => {
             alert("Thank you for your Post!!")
             props.getPosts()
             props.handleCreatePostClick()
